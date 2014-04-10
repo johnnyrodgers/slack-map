@@ -39,7 +39,7 @@ _You could also host this Rails app anywhere web-accessible. There's no reason i
 * Add an Outgoing Webhook with the following settings:
     - **Channel:** select a channel, (Any recommended)
     - **Trigger Words:** map
-    - **URL(s):** `http://appname.herokuapp.com/map` (use your heroku app URL from step 2)
+    - **URL(s):** `http://appname.herokuapp.com/map` (use your heroku app URL from step 2, making sure to add `/map` on to the end)
 * Save Integration
 
 **4. Use slack-map with the following commands and options**
