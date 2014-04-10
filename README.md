@@ -36,7 +36,7 @@ You could also host this Rails app anywhere web-accessible. There's no reason it
 * Add an Outgoing Webhook with the following settings:
     - **Channel:** select a channel, (Any recommended)
     - **Trigger Words:** map
-    - **URL(s):** your heroku URL
+    - **URL(s):** `your heroku URL`
 * Save Integration
 
 **4. Use slack-map with the following commands and options**
@@ -48,7 +48,7 @@ Options:
     zoom=[0 to 21] # 0 is the whole Earth, 21 is a single building - default is 13 (roughly city-sized)
     maptype=[roadmap, satellite, hybrid, terrain] # default is roadmap
 
-=== Limitations
+### Limitations
 
 The Google Static Maps API (https://developers.google.com/maps/documentation/staticmaps) has some limitations for free apps:
 
