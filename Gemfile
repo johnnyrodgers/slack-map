@@ -8,6 +8,11 @@ gem 'pg'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# Development
+group :development do
+	gem 'sqlite3'
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -27,9 +32,6 @@ gem 'jquery-rails'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
