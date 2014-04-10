@@ -50,14 +50,13 @@ class ApplicationController < ActionController::Base
   
   # posts a pre-formatted message to your Slack instance
 	def post_to_slack(payload)
-
-		# set your Slack incoming webhook URL here
-		# in the form: https://[team].slack.com/services/hooks/incoming-webhook?token=[token]
-		url = "https://give.slack.com/services/hooks/incoming-webhook?token=j6dqfsoMThqXeBkp8jUD8M2s"
+	
+		# set your slack incoming webhook URL in local_env.yml (for local testing) and as a Heroku config variable (see README)
+		# it looks like "https://teamname.slack.com/services/hooks/incoming-webhook?token=[token]"
 
 		# post to slack
 		begin
-			response = HTTParty.post(url, :body => { "payload" => payload.to_json })
+			response = HTTParty.post(ENV["SLACK_WEBHOOK_URL"], :body => { "payload" => payload.to_json })
 		rescue Timeout::Error => e
 			logger.info "Unable to post to Slack due to a Timeout"
 		rescue Exception => e
