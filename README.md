@@ -23,7 +23,7 @@ There are a few moving parts to get this integration set up for your Slack team.
 * Clone this git repo
 * Open `application_controller.rb` and paste your Incoming Webhook URL (from the last step) in the `post_to_slack` method:
 
-    url = [your webhook URL]
+    `url = [your webhook URL]`
 	
 * Deploy to Heroku (https://devcenter.heroku.com/articles/git)
 * Get your heroku app URL (something like `http://appname.herokuapp.com/`). You'll need this in the next step.
@@ -34,9 +34,9 @@ You could also host this Rails app anywhere web-accessible. There's no reason it
 
 * Go to https://my.slack.com/services/new
 * Add an Outgoing Webhook with the following settings:
-    - Channel: select a channel, (Any recommended)
-    - Trigger Words: map
-    - URL(s): your heroku URL
+    - **Channel:** select a channel, (Any recommended)
+    - **Trigger Words:** map
+    - **URL(s):** your heroku URL
 * Save Integration
 
 **4. Use slack-map with the following commands and options**
