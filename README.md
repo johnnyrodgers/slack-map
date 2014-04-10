@@ -1,10 +1,13 @@
 ## slack-map: A slack webhook for the Google Static Maps API
 
-slack-map lets you post static Google Maps images into your Slack instance. When you paste a link to a Google Map or request a map with a command like `map London`, an image of that location will be posted into your Slack channel along with a link to open the map in your browser.
+slack-map lets you post static Google Maps images into your Slack instance. Request a map with a command like `map London` and an image of that location will be posted into your Slack channel along with a link to open the map in your browser.
 
 ### Examples 
 
-TODO: add screenshots
+![Rome](https://slack-files.com/files-pub/T024F5NQC-F028EB7BH-760726/map_rome.png)
+![221B Baker Street](https://slack-files.com/files-pub/T024F5NQC-F028EB86D-d3082a/map_sherlock.png)
+![Vatican City](https://slack-files.com/files-pub/T024F5NQC-F028F1X3L-f17bc9/map_vatican_city_satellite.png)
+![Costa Rica](https://slack-files.com/files-pub/T024F5NQC-F028F1X4U-b02c7d/map_costa_rica_terrain.png)
 
 ### Setup
 
