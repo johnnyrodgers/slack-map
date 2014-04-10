@@ -24,10 +24,7 @@ There are a few moving parts to get this integration set up for your Slack team.
 **2. Heroku App**
 
 * Clone this git repo
-* Open `application_controller.rb` and paste your Incoming Webhook URL (from the last step) in the `post_to_slack` method:
-
-    `url = [your webhook URL]`
-	
+* Open `application_controller.rb` and paste your Incoming Webhook URL (from the last step) in the `post_to_slack` method: `url = [your webhook URL]`
 * Deploy to Heroku (https://devcenter.heroku.com/articles/git)
 * Get your heroku app URL (something like `http://appname.herokuapp.com/`). You'll need this in the next step.
 
