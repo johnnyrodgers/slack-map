@@ -15,7 +15,7 @@ There are a few moving parts to get this integration set up for your Slack team.
 * Go to https://my.slack.com/services/new
 * Add an Incoming Webhook.
 * Expand the "Instructions for creating Incoming WebHooks" section.
-* Copy the URL under "Sending Messages". It looks something like http://teamname.slack.com/services/hooks/incoming-webhook?token=token. You'll need this in the next step.
+* Copy the URL under "Sending Messages". It looks something like `http://teamname.slack.com/services/hooks/incoming-webhook?token=token`. You'll need this in the next step.
 * Save Settings
 
 **2. Heroku App**
