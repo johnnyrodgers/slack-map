@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
   
   def static_map
-  
-  	logger.debug params.to_yaml
   	
   	# get params
   	command = params["text"] # something like "map Rome"
@@ -24,7 +22,6 @@ class ApplicationController < ActionController::Base
   		zoom = command[zoom_regex]
   		zoom.gsub!("zoom=", "")
   		command.gsub!(zoom_regex, "")
-  		logger.debug "Zoom level detected: " + zoom
   	end
 
 		# match maptype=[roadmap, satellite, terrain, hybrid]  	
@@ -32,7 +29,6 @@ class ApplicationController < ActionController::Base
   		maptype = command[maptype_regex]
   		maptype.gsub!("maptype=", "")
   		command.gsub!(maptype_regex, "")
-  		logger.debug "Maptype detected: " + maptype
   	end
   	
   	# strip trigger and assign to location
