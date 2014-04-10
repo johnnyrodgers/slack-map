@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
   	
   	# format payload
   	payload = {
-  		"channel" => "#mapbot", 
+  		"channel" => "##{params['channel_name']}", 
   		"username" => "mapbot", 
   		"text" => "A map of <https://www.google.com/maps/place/#{CGI.escape(location)}|#{location}> (<https://www.google.com/maps/place/#{CGI.escape(location)}|View on Google Maps>): <http://maps.googleapis.com/maps/api/staticmap?center=#{CGI.escape(location)}&zoom=#{zoom}&size=800x800&sensor=false&maptype=#{maptype}| >",
   		"icon_emoji" => ":earth_americas:"
