@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'unicorn'
 gem 'httparty'
 gem 'pg'
+gem 'kgio', '2.9.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
