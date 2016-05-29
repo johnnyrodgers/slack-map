@@ -1,6 +1,7 @@
 SlackMap::Application.routes.draw do
 
 	post "map", :controller => "application", :action => "static_map"
+  match "*path" => "application#static_map", via: [:post]  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
