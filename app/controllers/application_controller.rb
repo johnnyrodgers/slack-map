@@ -52,7 +52,7 @@ class ApplicationController < ActionController::Base
 	def post_to_slack(payload)
 	
 		# set your slack incoming webhook URL in local_env.yml (for local testing) and as a Heroku config variable (see README)
-		# it looks like "https://teamname.slack.com/services/hooks/incoming-webhook?token=[token]"
+		# it looks like "https://hooks.slack.com/services/T12345678/B12345678/[token]"
 
 		# post to slack
 		begin
